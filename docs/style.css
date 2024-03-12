@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(229, 179, 121);
+}
+label{
+    font-family: cursive;
+    font-style: italic;
+    color: rgba(24, 15, 4, 0.801);
+    text-shadow: 1px 1px #b7a997;
+}
+input{
+    color: rgb(1, 16, 16);
+    background-color: rgb(247, 218, 176);
+    font-family: cursive;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 500px;
+
+}
+label{
+    display: inline-block;
+    width: 45%;
+}
+input {
+width: 45%;
+padding: 8px;
+margin-bottom: 10px;
+}
+.Gender{
+display: flex;
+flex-direction: row;
+padding-left: 15%;
+}
