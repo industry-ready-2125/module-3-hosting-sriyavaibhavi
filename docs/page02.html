@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(200, 161, 137);">
+    <h2>Registration</h2>
+    <form onsubmit="return validateRegistration()">
+        <!-- Registration form elements -->
+        <label>username:</label> <input type="text" name="username" required><br>
+        <label>Password:</label> <input type="password" name="password" pattern="(?=.\d)(?=.[a-z])(?=.[A-Z])(?=.\W)" 
+                   title="Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character" required><br>
+        <label>Confirm Password:</label> <input type="password" name="confirmPassword" required><br>
+        <label>email:</label> <input type="email" name="email" required><br>
+        <label>Mobile Number:</label> <input type="text" name="mobileNumber" pattern="[7-9][0-9]{9}" 
+                       title="Please enter a valid 10-digit mobile number starting with 7, 8, or 9" required><br>
+       <label> Date of Birth:</label> <input type="date" name="dob" required><br>
+        <label>Address:</label> <textarea name="address" required></textarea><br>
+       <div class="Gender">
+
+        <label style="margin-right: 30%;"> Gender:</label><br>
+        <input type="radio"  value="male" name="m" required> Male<br>
+        <input type="radio"  value="female" name="m" required> Female<br>
+        <input type="radio"  value="other" name="m" required> Other<br><br>
+        </div>
+        <input style="margin-left: 45%;" type="submit" value="Register">
+    </form>
+</body>
+</html>
